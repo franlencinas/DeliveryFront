@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "deliveryfront-80890": {
+      "hosting": {
+        "DeliveryFront": [
+          "deliveryfront-80890"
+        ]
+      }
+    }
+  }
+}
