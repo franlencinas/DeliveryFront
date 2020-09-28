@@ -1,16 +1,29 @@
-<h2 class="text-center">Login</h2>
-<form  [formGroup]="loginForm" (ngSubmit)="onLogin()">
-  <div class="form-group">
-    <label for="exampleInputEmail1">Email address</label>
-    <input type="email" class="form-control" formControlName="email">
-    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+<div class="row">
+  <div class="col-md-6 mx-auto mt-5">
+    <div class="card">
+      <div class="card-body">
+        <h2 class="text-center">Login</h2>
+        <form [formGroup]="loginForm" (ngSubmit)="onLogin()">
+          <div class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <input type="email" class="form-control" formControlName="email">
+            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Password</label>
+            <input type="password" class="form-control" formControlName="password">
+          </div>
+          <button type="submit" class="btn btn-primary btn-bloc btn-block">Submit</button>
+        </form>
+        <div class="form-group">
+          <p><a [routerLink]="['/register']" routerLinkActive="router-link-active">Wanna register?</a></p>
+        </div>
+        <div class="form-group">
+          <p><a [routerLink]="['/forgot-password']" routerLinkActive="router-link-active">
+              Olvide mi contraseña</a>
+          </p>
+        </div>
+      </div>
+    </div>
   </div>
-  <div class="form-group">
-    <label for="exampleInputPassword1">Password</label>
-    <input type="password" class="form-control" formControlName="password">
-  </div>
-  <button type="submit" class="btn btn-primary">Submit</button>
-</form>
-<div class="form-group">
-  <p><a [routerLink]="['/register']" routerLinkActive="router-link-active" >Wanna register?</a></p>
 </div>
