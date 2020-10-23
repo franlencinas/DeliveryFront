@@ -21,6 +21,7 @@ export class ForgotPasswordComponent {
       window.alert('Email sent, check your inbox!');
       this.router.navigate(['/login']);
     } catch (error) {
+      alert('No encontramos ese correo electrónico en nuestra Base de Datos');
       console.log(error);
     }
   }
